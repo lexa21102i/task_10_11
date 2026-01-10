@@ -136,3 +136,24 @@ main {
   height: 100%;
   padding: 10px;
 }
+
+.fruit_red {
+  background-color: #ff0000;
+  color: white;
+}
+
+.fruit_orange {
+  background-color: #ffa500;
+  color: black;
+}
+
+.fruit_blue {
+  background-color: #0000ff;
+  color: white;
+}
+
+.fruit_default {
+  background-color: #cccccc;
+  color: black;
+  border: 2px dashed #666;
+}
