@@ -299,19 +299,30 @@ sortActionButton.addEventListener('click', () => {
 addActionButton.addEventListener('click', () => {
   const kind = kindInput.value.trim();
   const color = colorInput.value.trim();
+  const weightStr = weightInput.value.trim();
   const weight = parseFloat(weightInput.value);
+
   if (!kind) {
     alert('Пожалуйста, введите название фрукта (kind)');
+    kindInput.focus();
     return;
   }
   
   if (!color) {
     alert('Пожалуйста, введите цвет фрукта (color)');
+    colorInput.focus();
+    return;
+  }
+
+  if (!weightStr) {
+    alert('Пожалуйста, введите вес фрукта (weight)');
+    weightInput.focus();
     return;
   }
   
   if (isNaN(weight) || weight <= 0) {
     alert('Пожалуйста, введите корректный вес фрукта (положительное число)');
+    weightInput.focus();
     return;
   }
 
